@@ -1,28 +1,49 @@
-  //const form = {
-      // id: 3,
-      // name: "Maksim",
-      //lastName: "Shvachov",
-      //Age: "13 years",
-      //Height: "1m 65cm",
-      //Place: "Kyiv",
-      //email:"mshvachev@ukr.net"
-  //}
+  //const maks = {}
+  
+  //maks.name = "Maks"
+  //maks.age = 24
+  //maks.height = 160
+  //maks.place = "Kiyv"
 
+//const maksKeys = Object.keys(maks)
 
-  //const arrayOfKeys = object.keys(obj)
+//for(let i = 0; i < maksKeys.length; i++){
+    //const key = maksKeys[i]
+    //console.log(key + " = " + maks[key])
+//}
 
-  //console.log(form)
-  //console.log(typeof form)
+// const maksCopy = Object.assign({}, maks)
+// const maksCopy2 = {
+//     ...maks
+// }
 
-  //const jsonForRequest = JSON.stringify(form)
+// console.log(maks)
+// console.log(maksCopy)
 
+// maksCopy.lastName = "Shvachov"
 
-  //console.log(jsonForRequest)
-  //console.log(typeof jsonForRequest)
+// console.log(maks)
+// console.log(maksCopy)
+ 
+//
 
- // const objectFromJson = JSON.parse(jsonForRequest)
+const dictionary = new Map()
 
+dictionary.set("key1", {
+    name: "Dad",
+    phoneNUmber: "+380*********"
+})
 
-  //console.log(objectFromJson)
-  //console.log(typeof objectFromJson)
+const arrayKey = [1, 2, 3]
 
+dictionary.set(arrayKey, {
+    name: "Mom",
+    phoneNUmber: "+380*********"
+})
+
+console.log(dictionary)
+
+console.log(dictionary.get("key1"))
+console.log(dictionary.get(arrayKey))
+
+console.log(dictionary.size)
